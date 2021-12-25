@@ -1,4 +1,4 @@
-test_list = ["all", "love", "iorn", "get", "educated", "by", "gfg"]
+test_list = ["all", "love", "iorn", "get", "educated", "by", "yours"]
   
 print("The original list is : " + str(test_list))
   
@@ -12,7 +12,7 @@ for sub in test_list:
         if sub.startswith(ele):
             flag = True 
             break
-    if flag:
+    if flag and len(res) < 3:
         res.append(sub.capitalize())
   
 print("The extracted words : " + str(res))
