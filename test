@@ -1,0 +1,18 @@
+test_list = ["all", "love", "iorn", "get", "educated", "by", "gfg"]
+  
+print("The original list is : " + str(test_list))
+  
+res = []
+vow = "aeiou"
+for sub in test_list:
+    flag = False
+      
+    #checking for begin char
+    for ele in vow:
+        if sub.startswith(ele):
+            flag = True 
+            break
+    if flag:
+        res.append(sub.capitalize())
+  
+print("The extracted words : " + str(res))
